@@ -80,6 +80,7 @@ FreqPCR
 
 - **NeRF-Synthetic**: Please download the dataset provided by [NeRF](https://github.com/bmild/nerf) and put the unpacked files in ``data/nerf_synthetic``. 
 Since [Point-NeRF](https://github.com/Xharlie/pointnerf) provide an implementation of point cloud generation using [MVSNet](https://github.com/YoYo000/MVSNet), we can run [Point-NeRF](https://github.com/Xharlie/pointnerf) and save the point clouds in ``data/pc/``.
+You can also download raw point clouds from [here](https://drive.google.com/drive/folders/1qcEk97RgwCAzzmXUTUXCGNsGzwYPicLA).
 
 - **Tanks and Temples**: Please download the dataset provided by [NSVF](https://dl.fbaipublicfiles.com/nsvf/dataset/TanksAndTemple.zip) and put the unpacked files in ``data/TanksAndTemple``. To generate point clouds, run [Point-NeRF](https://github.com/Xharlie/pointnerf) and save the point clouds in ``data/pc/``.
 

@@ -1,15 +1,15 @@
-expname = hotdog
+expname = mic
 device = cuda:0
 logdir = logs
-datadir = data/nerf_synthetic/hotdog
+datadir = data/nerf_synthetic/mic
 pcdir = path/to/optimized_point_cloud.ply
 dataset = nerf
 
-radius = 0.005
-frag_path = data/fragments/hotdog
+radius = 0.003
+frag_path = data/fragments/mic
 H = 800
 W = 800
-train_size = 704
+train_size = 800
 
 batch = 2
 dim = 11

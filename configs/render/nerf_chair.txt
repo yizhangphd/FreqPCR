@@ -1,12 +1,12 @@
-expname = hotdog
+expname = chair
 device = cuda:0
 logdir = logs
-datadir = data/nerf_synthetic/hotdog
+datadir = data/nerf_synthetic/chair
 pcdir = path/to/optimized_point_cloud.ply
 dataset = nerf
 
 radius = 0.005
-frag_path = data/fragments/hotdog
+frag_path = data/fragments/chair
 H = 800
 W = 800
 train_size = 704

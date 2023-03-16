@@ -1,0 +1,25 @@
+expname = mic
+dataset = nerf
+logdir = logs_pc_opt
+datadir = data/nerf_synthetic/mic
+frag_path = data/fragments/mic
+pcdir = data/pc/mic.ply
+
+radius = 0.003
+batch = 2
+H = 800
+W = 800
+train_size = 200
+mlp_lr = 5e-4
+sig_lr = 1e-2
+
+reset
+bigloop = 4
+epoch = 200
+max_fill_num = 60000
+buf = 16
+patch_r = 3
+num_per_hole = 10
+thres = 0.2
+reg1 = 5e-4
+reg2 = 0

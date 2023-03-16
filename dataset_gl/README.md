@@ -1,0 +1,1 @@
+The rasterization code in ``rasterizer.py`` and ``shader.py`` is borrowed from [NPBG](https://github.com/alievk/npbg).

@@ -1,0 +1,25 @@
+expname = family
+dataset = tt
+logdir = logs_pc_opt
+datadir = data/TanksAndTemple/Family
+pcdir = data/pc/family.ply
+down = 3
+
+radius = 0.003
+batch = 2
+H = 528
+W = 960
+train_size = 300
+mlp_lr = 5e-4
+sig_lr = 1e-2
+
+reset
+bigloop = 12
+epoch = 300
+max_fill_num = 60000
+buf = 16
+patch_r = 5
+num_per_hole = 10
+thres = 0.3
+reg1 = 5e-4
+reg2 = 0

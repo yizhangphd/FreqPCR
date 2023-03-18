@@ -14,8 +14,8 @@ mlp_lr = 5e-4
 sig_lr = 1e-2
 
 reset
-bigloop = 4
-epoch = 200
+bigloop = 6
+epoch = 300
 max_fill_num = 60000
 buf = 16
 patch_r = 3

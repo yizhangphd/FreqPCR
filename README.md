@@ -1,5 +1,5 @@
-# FreqPCR
-<!-- # Frequency-Modulated Point Cloud Rendering with Easy Editing -->
+<!-- # FreqPCR -->
+# Frequency-Modulated Point Cloud Rendering with Easy Editing
 
 This repository contains the official implementation for the paper: **[Frequency-Modulated Point Cloud Rendering with Easy Editing](https://arxiv.org/abs/2303.07596) (CVPR 2023)**.
 
@@ -91,36 +91,34 @@ For ``scene0043_00``, the frames after 1000 are ignored because the camera param
 
 ## Running
 
-**Point Cloud Geometry Optmization**
+We experiment on a single NVIDIA GeForce RTX 3090 (24G), if your GPU memory is not enough, you can set the ``batch_size`` to 1 or reduce the ``train_size``.
+
+#### Point Cloud Geometry Optmization
 ```
 python pc_opt.py --config=configs/pc_opt/nerf_hotdog.txt
 ```
 The optimized point cloud will be saved in ``logs_pc_opt/``
 
-**Rasterization**
+#### Rasterization
 ```
 python run_rasterize.py --config=configs/render/nerf_hotdog.txt
 ```
 <!-- This is PyTorch3D rasterization for headless computers.  -->
 The point index and depth buffers will be saved in ``data/fragments``.
 
-**Training**
+#### Training
 
 ```
 python train.py --config=configs/render/nerf_hotdog.txt
 ```
-The results will be saved in ``logs/``. You can also run tensorboard to monitor training and testing
+The results will be saved in ``logs/``. You can also run tensorboard to monitor training and testing.
 
-```
-tensorboard --logdir=logs
-```
-
-**Real-time Rendering**
+#### Real-time Rendering
 ```
 python inference_gl.py --config=configs/render/nerf_hotdog.txt
 ```
 
-**Editing**
+#### Editing
 ```
 TODO
 ```

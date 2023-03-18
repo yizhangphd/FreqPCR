@@ -15,7 +15,7 @@ sig_lr = 1e-2
 
 reset
 bigloop = 10
-epoch = 200
+epoch = 300
 max_fill_num = 60000
 buf = 16
 patch_r = 5

@@ -41,27 +41,27 @@ if __name__ == '__main__':
     u = 0
     with torch.autograd.no_grad():
         
-        begin = time.time()
+        # begin = time.time()
         t_sum = 0
         for i, batch in enumerate(test_loader):
-            # print(i)
             # idx = int(batch['idx'][0])
             ray = batch['ray']
             # img_gt = batch['rgb'][0]
             zbuf = batch['zbuf']
             output = renderer(zbuf, ray, gt=None, mask_gt=None, isTrain=False)
-            if i > 0:
-                timeall =  timeall + output['infer_time']
-                mlp =  mlp + output['mlp_t']
-                u =  u + output['u_t']
+            # if i > 0:
+            #     timeall =  timeall + output['infer_time']
+            #     mlp =  mlp + output['mlp_t']
+            #     u =  u + output['u_t']
             # img_pre = output['img'].cpu().numpy()
-
             # img_pre[img_pre>1] = 1.
             # img_pre[img_pre<0] = 0.
-            # plt.imsave(os.path.join('test_render', str(i).rjust(3,'0') + '.png'), img_pre)
-            t_sum += batch['t'][0]
+            # plt.imsave(os.path.join(video_path, str(i).rjust(3,'0') + '.png'), img_pre)
+            # t_sum += batch['t'][0]
+            if i == 0:
+                begin = time.time()  # ignore the first iter
         end = time.time()
-    print('time consume:', end - begin, 'feamap', t_sum)
-    print(f'Done. {mlp/199}, {u/199}, {timeall/199} s')
+    print('FPS:', 199 / (end - begin))
+    # print(f'Done. {mlp/199}, {u/199}, {timeall/199} s')
 
                 

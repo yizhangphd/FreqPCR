@@ -1,7 +1,7 @@
 <!-- # FreqPCR -->
 # Frequency-Modulated Point Cloud Rendering with Easy Editing
 
-This repository contains the official implementation for the paper: **[Frequency-Modulated Point Cloud Rendering with Easy Editing](https://arxiv.org/abs/2303.07596) (CVPR 2023)**.
+This repository contains the official implementation for the paper: **[Frequency-Modulated Point Cloud Rendering with Easy Editing](https://arxiv.org/abs/2303.07596) (CVPR 2023 Highlight)**.
 
 <img src="image/hotdog_chair.gif" width = "150" height = "150" alt="chair" /><img src="image/lego_chair.gif" width = "150" height = "150" alt="chair" /><img src="image/family_ficus.gif" width = "150" height = "150" alt="chair" /><img src="image/materials_drums.gif" width = "150" height = "150" alt="chair" />
  

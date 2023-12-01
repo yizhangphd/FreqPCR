@@ -1,0 +1,15 @@
+expname = lego
+device = 'cuda:0'
+logdir = ./logs_edit
+datadir = ./data/nerf_synthetic/lego
+pcdir = ./data/pc/221004-111313-lego-800-2.ply
+dataset = nerf
+edit_mask_dir = configs/edit/materials_mask_list.txt
+
+radius = 0.004
+H = 800
+W = 800
+ckpt = 'logs/221010-174552-lego-704-0.005-pixFalse-xyznearTrue-0.111-1.0/model.pkl'
+
+
+dim = 11

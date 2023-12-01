@@ -1,0 +1,15 @@
+expname = drums
+device = 'cuda:0'
+logdir = ./logs_edit
+datadir = ./data/nerf_synthetic/drums
+pcdir = logs_pc_opt/221102-142207-drums-800/video/drums-denoise-221102-214031.ply
+dataset = nerf
+edit_mask_dir = configs/edit/drums_edit.txt
+
+radius = 0.005
+H = 800
+W = 800
+ckpt = 'logs/221102-220956-drums/model.pkl'
+
+
+dim = 11

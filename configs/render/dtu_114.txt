@@ -1,0 +1,27 @@
+expname = dtu_114
+device = cuda:0
+logdir = logs
+datadir = data/dtu/dtu_114
+pcdir = logs_pc_opt/221028-195841-dtu_114-600/video/dtu_114-denoise-221029-102740.ply
+dataset = dtu
+
+
+radius = 0.003
+frag_path = data/fragments/dtu_114
+H = 1200
+W = 1600
+train_size = 704
+batch = 2
+
+dim = 11
+
+mlp_lr = 5e-4
+u_lr = 1.5e-4
+
+scale_max = 1.
+scale_min = 0.083
+pad = 0
+
+vgg_l = 0.005
+test_freq = 20
+vid_freq = 20

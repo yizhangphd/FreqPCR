@@ -1,0 +1,31 @@
+expname = drums
+device = 'cuda:0'
+logdir = ./logs
+datadir = ./data/nerf_synthetic/drums
+pcdir = logs_pc_opt/221102-142207-drums-800/video/drums-denoise-221102-214031.ply
+dataset = nerf
+
+radius = 0.005
+frag_path = './data/fragments/drums'
+H = 800
+W = 800
+train_size = 704
+ckpt = 'logs/221101-195851-drums/model.pkl'
+
+batch = 2
+
+dim = 11
+
+mlp_lr = 5e-4
+u_lr = 1.5e-4
+
+scale_max = 1.
+scale_min = 0.111
+
+pad = 200
+
+
+vgg_l = 0.005
+edge_mask = 0
+test_freq = 10
+vid_freq = 10

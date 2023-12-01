@@ -1,0 +1,29 @@
+expname = scan_43
+device = 'cuda:0'
+logdir = logs
+datadir = data/scannet/0043
+pcdir = data/scannet/0043/point_clouds_simplified.ply
+dataset = scan
+down = 1
+
+
+radius = 0.007
+frag_path = data/fragments/scan_43
+H = 960
+W = 1200
+train_size = 704
+batch = 2
+
+dim = 11
+
+mlp_lr = 5e-4
+u_lr = 1.5e-4
+
+scale_max = 1.
+scale_min = 0.089
+
+pad = 0
+
+vgg_l = 0.005
+test_freq = 10
+vid_freq = 30

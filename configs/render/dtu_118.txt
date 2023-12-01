@@ -1,0 +1,28 @@
+expname = dtu_118
+device = 'cuda:0'
+logdir = ./logs
+datadir = ./data/dtu/dtu_118
+pcdir = logs_pc_opt/221109-230847-dtu_118-1200/video/dtu_118-denoise-221110-155452.ply
+dataset = dtu
+
+
+radius = 0.003
+frag_path = './data/fragments/dtu_118'
+H = 1200
+W = 1600
+train_size = 704
+batch = 2
+
+dim = 11
+
+mlp_lr = 5e-4
+u_lr = 1.5e-4
+
+scale_max = 1.
+scale_min = 0.05
+pad = 0
+
+vgg_l = 0.005
+edge_mask = 0
+test_freq = 20
+vid_freq = 60

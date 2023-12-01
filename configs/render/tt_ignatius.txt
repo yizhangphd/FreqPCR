@@ -1,0 +1,32 @@
+expname = tt_ignatius
+device = 'cuda:0'
+logdir = ./logs
+datadir = /home/ps/zy/TanksAndTemple/Ignatius
+pcdir = ./data/pc/ignatius.ply
+dataset = tt
+
+radius = 0.005
+frag_path = './data/fragments/tt_ignatius'
+H = 1056
+W = 1920
+train_size = 640
+batch = 2
+ckpt = logs/221011-151808-tt_ignatius-640-0.005-pixFalse-xyznearFalse-0.111-1.0/model.pkl
+
+
+
+dim = 11
+
+mlp_lr = 5e-4
+u_lr = 1.5e-4
+
+scale_max = 1.
+scale_min = 0.111
+
+pad = 200
+
+
+vgg_l = 0.005
+edge_mask = 0
+test_freq = 10
+vid_freq = 10

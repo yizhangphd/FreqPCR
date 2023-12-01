@@ -1,0 +1,28 @@
+expname = tt_truck
+device = 'cuda:0'
+logdir = ./logs
+datadir = /home/ps/zy/TanksAndTemple/Truck
+pcdir = logs_pc_opt/221014-130904-truck-528/video/truck-denoise-221015-061028.ply
+dataset = tt
+
+radius = 0.005
+frag_path = './data/fragments/tt_truck'
+H = 1056
+W = 1920
+train_size = 800
+ckpt = logs/221026-212224-tt_truck-afacFalse/model.pkl
+
+dim = 11
+
+mlp_lr = 5e-4
+u_lr = 1.5e-4
+
+scale_max = 1.
+scale_min = 0.111
+
+pad = 200
+
+vgg_l = 0.005
+edge_mask = 0
+test_freq = 10
+vid_freq = 10

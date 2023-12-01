@@ -1,0 +1,30 @@
+expname = ship
+device = 'cuda:0'
+logdir = ./logs
+datadir = ./data/nerf_synthetic/ship
+pcdir = ./data/pc/ship-denoise-22-10-11-12-27-06.ply
+dataset = nerf
+
+radius = 0.005
+frag_path = './data/fragments/ship'
+H = 800
+W = 800
+train_size = 704
+
+batch = 2
+
+dim = 11
+
+mlp_lr = 5e-4
+u_lr = 1.5e-4
+
+scale_max = 1.
+scale_min = 0.111
+
+pad = 200
+
+
+vgg_l = 0.005
+edge_mask = 0
+test_freq = 10
+vid_freq = 10
